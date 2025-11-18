@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Solora Web Studio | Where clean design meets powerful performance</title>
+  <meta name="description" content="Solora Web Studio crafts premium, conversion-focused websites for modern brands." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          sans: ['Inter', 'system-ui', 'sans-serif'],
+          serif: ['Playfair Display', 'Georgia', 'serif'],
+        },
+        extend: {
+          colors: {
+            solora: {
+              gold: '#E8D9A8',
+              charcoal: '#111111',
+              gray: '#F7F7F7',
+            },
+          },
+          boxShadow: {
+            subtle: '0 15px 45px rgba(17,17,17,0.08)',
+          },
+        },
+      },
+      darkMode: 'class',
+    };
+  </script>
+</head>
+<body class="bg-white text-solora-charcoal transition-colors duration-500" data-theme="light">
+  <div class="min-h-screen bg-gradient-to-r from-white via-white to-[rgba(232,217,168,0.25)] dark:from-[#0c0c0c] dark:via-[#111] dark:to-[#1b1b1b]">
+    <header class="sticky top-0 z-50 backdrop-blur-xl bg-white/80 dark:bg-black/60 border-b border-black/5 dark:border-white/10">
+      <div class="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
+        <a href="#home" class="text-lg tracking-[0.2em] uppercase font-medium">Solora Web Studio</a>
+        <nav class="hidden md:flex gap-8 text-sm">
+          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#services">Services</a>
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+          <a class="nav-link" href="#pricing">Pricing</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+        <button id="themeToggle" class="p-2 rounded-full border border-black/10 dark:border-white/20" aria-label="Toggle color mode">
+          <span class="toggle-icon block w-5 h-5"></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="home" class="mx-auto max-w-6xl px-6">
+      <section class="py-20 grid lg:grid-cols-2 gap-20 items-center fade-up">
+        <div class="space-y-8">
+          <p class="text-sm uppercase tracking-[0.4em] text-black/60 dark:text-white/60">Where clean design meets powerful performance.</p>
+          <h1 class="font-serif text-4xl md:text-5xl leading-tight">Crafting Premium Websites for Brands That Want to Stand Out.</h1>
+          <p class="text-lg text-black/70 dark:text-white/70">Solora Web Studio blends aesthetic design, SEO clarity, and conversion-driven strategy to help your brand grow—beautifully and efficiently.</p>
+          <div class="flex flex-wrap gap-4">
+            <a href="#contact" class="btn-primary">Get Your Website</a>
+            <a href="#portfolio" class="btn-secondary">View Our Work</a>
+          </div>
+        </div>
+        <div class="hero-showcase">
+          <div class="hero-card primary">
+            <p class="text-xs uppercase tracking-[0.4em] text-black/60 dark:text-white/60">Signature Process</p>
+            <h3 class="text-2xl font-serif mt-3 mb-4">Strategy, Design, Performance</h3>
+            <p class="text-sm text-black/70 dark:text-white/70">We orchestrate research, premium design systems, and conversion-ready builds into one seamless engagement.</p>
+            <div class="hero-metrics">
+              <div>
+                <span class="metric-value">40%</span>
+                <span class="metric-label">Faster load times</span>
+              </div>
+              <div>
+                <span class="metric-value">3.2x</span>
+                <span class="metric-label">Avg. conversion lift</span>
+              </div>
+              <div>
+                <span class="metric-value">24/7</span>
+                <span class="metric-label">Care & monitoring</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card secondary">
+            <div>
+              <p class="text-xs uppercase tracking-[0.4em] text-black/60 dark:text-white/60">Latest Delivery</p>
+              <h4 class="text-lg font-serif mt-2">Elysian Clinics</h4>
+              <p class="text-sm text-black/70 dark:text-white/70">Wellness platform with immersive booking & long-form storytelling.</p>
+            </div>
+            <div class="hero-badges">
+              <span>Headless CMS</span>
+              <span>SEO Score 98</span>
+              <span>ADA Ready</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="py-20 space-y-12 fade-up">
+        <div>
+          <p class="eyebrow">Services</p>
+          <h2 class="section-title">What We Do Best</h2>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article class="service-card">
+            <span class="icon-circle">↗</span>
+            <h3>SEO Optimization</h3>
+            <p>Rank higher, load faster, and get discovered with search-first technical structure.</p>
+          </article>
+          <article class="service-card">
+            <span class="icon-circle">☆</span>
+            <h3>Lead Generation</h3>
+            <p>Smart funnels, strategic CTAs, and data-driven structures built for conversions.</p>
+          </article>
+          <article class="service-card">
+            <span class="icon-circle">✦</span>
+            <h3>Premium Design</h3>
+            <p>Clean, modern, intuitive interfaces tailored for high-end brand presence.</p>
+          </article>
+          <article class="service-card">
+            <span class="icon-circle">⊛</span>
+            <h3>AI Chatbots (Add-on)</h3>
+            <p>24/7 intelligent support for improved engagement and reduced workload.</p>
+          </article>
+          <article class="service-card">
+            <span class="icon-circle">⌛</span>
+            <h3>Appointment Booking</h3>
+            <p>Seamless scheduling experiences integrated directly into your site.</p>
+          </article>
+          <article class="service-card">
+            <span class="icon-circle">❖</span>
+            <h3>Google Review Widget</h3>
+            <p>Highlight glowing customer stories right where trust matters most.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="portfolio" class="py-20 space-y-12 fade-up">
+        <div class="max-w-3xl">
+          <p class="eyebrow">Portfolio</p>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="text-base text-black/70 dark:text-white/70">Explore a curated selection of our recent work—built to be fast, elegant, and conversion-ready.</p>
+        </div>
+        <div class="portfolio-grid">
+          <article class="portfolio-card fade-up">
+            <div class="portfolio-shot" role="img" aria-label="Aurora Atelier preview"></div>
+            <p class="text-xs uppercase tracking-[0.4em] text-black/60 dark:text-white/60">Luxury Retail</p>
+            <h3 class="text-xl font-serif mt-2 mb-3">Aurora Atelier</h3>
+            <p class="text-sm text-black/70 dark:text-white/70">Concierge shopping journey with immersive lookbooks and shoppable stories.</p>
+          </article>
+          <article class="portfolio-card fade-up">
+            <div class="portfolio-shot" role="img" aria-label="Northwind Capital preview"></div>
+            <p class="text-xs uppercase tracking-[0.4em] text-black/60 dark:text-white/60">Venture Fund</p>
+            <h3 class="text-xl font-serif mt-2 mb-3">Northwind Capital</h3>
+            <p class="text-sm text-black/70 dark:text-white/70">Insight hub with gated research, performance dashboards, and lead capture.</p>
+          </article>
+          <article class="portfolio-card fade-up">
+            <div class="portfolio-shot" role="img" aria-label="Marble & Co preview"></div>
+            <p class="text-xs uppercase tracking-[0.4em] text-black/60 dark:text-white/60">Interior Studio</p>
+            <h3 class="text-xl font-serif mt-2 mb-3">Marble &amp; Co.</h3>
+            <p class="text-sm text-black/70 dark:text-white/70">Editorial site featuring cinematic scrolling, contextual CTAs, and AR previews.</p>
+          </article>
+          <article class="portfolio-card fade-up">
+            <div class="portfolio-shot" role="img" aria-label="Forma Athletics preview"></div>
+            <p class="text-xs uppercase tracking-[0.4em] text-black/60 dark:text-white/60">Fitness Collective</p>
+            <h3 class="text-xl font-serif mt-2 mb-3">Forma Athletics</h3>
+            <p class="text-sm text-black/70 dark:text-white/70">Launch stack with membership CRM, trial flows, and campaign landing modules.</p>
+          </article>
+          <article class="portfolio-card fade-up">
+            <div class="portfolio-shot" role="img" aria-label="Elysian Clinics preview"></div>
+            <p class="text-xs uppercase tracking-[0.4em] text-black/60 dark:text-white/60">Wellness Brand</p>
+            <h3 class="text-xl font-serif mt-2 mb-3">Elysian Clinics</h3>
+            <p class="text-sm text-black/70 dark:text-white/70">Compliance-ready booking, storytelling pages, and multilingual knowledge base.</p>
+          </article>
+          <article class="portfolio-card fade-up">
+            <div class="portfolio-shot" role="img" aria-label="Velvet Table preview"></div>
+            <p class="text-xs uppercase tracking-[0.4em] text-black/60 dark:text-white/60">Hospitality</p>
+            <h3 class="text-xl font-serif mt-2 mb-3">Velvet Table</h3>
+            <p class="text-sm text-black/70 dark:text-white/70">Menu CMS with reservation API, social proof, and narrative tasting experiences.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="pricing" class="py-20 space-y-12 fade-up">
+        <div class="max-w-3xl">
+          <p class="eyebrow">Pricing</p>
+          <h2 class="section-title">Simple, Transparent Pricing</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <article class="price-card">
+            <h3>Basic</h3>
+            <p class="price">₹45,000</p>
+            <ul>
+              <li>1–3 Page Website</li>
+              <li>Mobile Responsive</li>
+              <li>Basic SEO Setup</li>
+              <li>Delivery: 5 days</li>
+            </ul>
+          </article>
+          <article class="price-card premium">
+            <span class="badge">Most Loved</span>
+            <h3>Premium</h3>
+            <p class="price">₹85,000</p>
+            <ul>
+              <li>5–7 Pages</li>
+              <li>Premium UI Design</li>
+              <li>Conversion-Optimized</li>
+              <li>Standard SEO</li>
+              <li>3 Revisions</li>
+            </ul>
+          </article>
+          <article class="price-card">
+            <h3>Advanced</h3>
+            <p class="price">₹1,40,000</p>
+            <ul>
+              <li>8+ Pages</li>
+              <li>Custom UI/UX</li>
+              <li>Full SEO Optimization</li>
+              <li>High-end Animations</li>
+              <li>Blog + CMS</li>
+            </ul>
+          </article>
+        </div>
+        <div class="add-ons">
+          <p class="text-sm uppercase tracking-[0.4em] text-black/60 dark:text-white/60">Add-ons</p>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="add-on-item">
+              <span>AI Chatbots</span>
+              <strong>₹18,000</strong>
+            </div>
+            <div class="add-on-item">
+              <span>Appointment Booking Feature</span>
+              <strong>₹12,000</strong>
+            </div>
+            <div class="add-on-item">
+              <span>Google Review Widget</span>
+              <strong>₹9,500</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-20 space-y-10 fade-up">
+        <div class="max-w-3xl">
+          <p class="eyebrow">Contact</p>
+          <h2 class="section-title">Let’s Build Something Beautiful Together.</h2>
+          <p class="text-base text-black/70 dark:text-white/70">Tell us what you need — we’ll take it from here.</p>
+        </div>
+        <form id="contactForm" class="contact-form" novalidate>
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Business Name
+            <input type="text" name="business" required />
+          </label>
+          <label class="md:col-span-2">
+            Project Requirements
+            <textarea name="requirements" rows="4" required></textarea>
+          </label>
+          <label>
+            Budget
+            <select name="budget" required>
+              <option value="">Select a range</option>
+              <option value="under50">Under ₹50K</option>
+              <option value="50-100">₹50K – ₹1L</option>
+              <option value="100-200">₹1L – ₹2L</option>
+              <option value="200+">₹2L+</option>
+            </select>
+          </label>
+          <button type="submit" class="btn-primary md:col-span-2">
+            <span class="btn-label">Submit</span>
+            <span class="btn-spinner" aria-hidden="true"></span>
+          </button>
+          <p id="formMessage" class="sr-only" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="border-t border-black/5 dark:border-white/10 py-12">
+      <div class="mx-auto max-w-6xl px-6 grid md:grid-cols-3 gap-8 text-sm">
+        <div class="space-y-3">
+          <p class="text-lg tracking-[0.3em] uppercase">Solora Web Studio</p>
+          <p>Where clean design meets powerful performance.</p>
+        </div>
+        <div>
+          <p class="font-medium uppercase tracking-[0.4em] text-xs text-black/60 dark:text-white/60">Navigate</p>
+          <ul class="space-y-2 mt-4">
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#services">Services</a></li>
+            <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="space-y-4">
+          <p class="font-medium uppercase tracking-[0.4em] text-xs text-black/60 dark:text-white/60">Connect</p>
+          <div class="flex gap-4">
+            <a href="#" aria-label="Instagram" class="social">IG</a>
+            <a href="#" aria-label="Dribbble" class="social">DB</a>
+            <a href="#" aria-label="LinkedIn" class="social">IN</a>
+          </div>
+          <p class="text-xs text-black/60 dark:text-white/60">© <span id="year"></span> Solora Web Studio. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
