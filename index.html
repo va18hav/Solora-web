@@ -46,7 +46,21 @@
           <a class="nav-link" href="#pricing">Pricing</a>
           <a class="nav-link" href="#contact">Contact</a>
         </nav>
+        <button id="mobileNavToggle" class="md:hidden inline-flex flex-col justify-center gap-1.5 p-2 rounded-full border border-black/10 dark:border-white/20" aria-label="Open navigation" aria-expanded="false">
+          <span class="block w-6 h-[2px] bg-black dark:bg-white rounded-full"></span>
+          <span class="block w-6 h-[2px] bg-black dark:bg-white rounded-full"></span>
+          <span class="block w-6 h-[2px] bg-black dark:bg-white rounded-full"></span>
+        </button>
       </div>
+      <nav id="mobileNav" class="md:hidden px-6 pb-4 bg-white/95 dark:bg-black/90 border-t border-black/5 dark:border-white/10 hidden">
+        <ul class="flex flex-col gap-3 text-sm">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main id="home" class="mx-auto max-w-6xl px-6">

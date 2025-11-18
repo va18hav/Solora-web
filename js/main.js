@@ -116,6 +116,17 @@ const initYear = () => {
   if (yearSlot) yearSlot.textContent = year;
 };
 
+const mobileNav = () => {
+  const toggle = select('#mobileNavToggle');
+  const menu = select('#mobileNav');
+  if (!toggle || !menu) return;
+
+  toggle.addEventListener('click', () => {
+    const isOpen = menu.classList.toggle('hidden') === false;
+    toggle.setAttribute('aria-expanded', String(isOpen));
+  });
+};
+
 const init = () => {
   handleTheme();
   enhanceCards();
@@ -123,6 +134,7 @@ const init = () => {
   smoothAnchors();
   contactFormLogic();
   initYear();
+  mobileNav();
 };
 
 document.addEventListener('DOMContentLoaded', init);
