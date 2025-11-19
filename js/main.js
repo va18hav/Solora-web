@@ -136,6 +136,24 @@ const init = () => {
   contactFormLogic();
   initYear();
   mobileNav();
+  videoHoverLogic();
+};
+
+const videoHoverLogic = () => {
+  const cards = document.querySelectorAll('.portfolio-card');
+  cards.forEach(card => {
+    const video = card.querySelector('.hover-video');
+    if (!video) return;
+
+    card.addEventListener('mouseenter', () => {
+      video.play().catch(e => console.log('Video play failed:', e));
+    });
+
+    card.addEventListener('mouseleave', () => {
+      video.pause();
+      video.currentTime = 0;
+    });
+  });
 };
 
 document.addEventListener('DOMContentLoaded', init);
