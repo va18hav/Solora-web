@@ -49,7 +49,6 @@
           <a class="nav-link" href="#home">Home</a>
           <a class="nav-link" href="#services">Services</a>
           <a class="nav-link" href="#portfolio">Portfolio</a>
-          <a class="nav-link" href="#pricing">Pricing</a>
           <a class="nav-link" href="#contact">Contact</a>
         </nav>
         <button id="mobileNavToggle"
@@ -66,14 +65,13 @@
           <li><a class="nav-link" href="#home">Home</a></li>
           <li><a class="nav-link" href="#services">Services</a></li>
           <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link" href="#pricing">Pricing</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main id="home" class="mx-auto max-w-6xl px-6">
-      <section class="py-20 grid lg:grid-cols-2 gap-20 items-center fade-up">
+      <section id="heroSection" class="py-20 grid lg:grid-cols-2 gap-20 items-center fade-up">
         <div class="space-y-8">
           <p class="text-sm uppercase tracking-[0.4em] text-black/60 dark:text-white/60">Where clean design meets
             powerful performance.</p>
@@ -102,24 +100,12 @@
                 <span class="metric-label">Avg. conversion lift</span>
               </div>
               <div>
-                <span class="metric-value">24/7</span>
-                <span class="metric-label">Care & monitoring</span>
+                <span class="metric-value">+42</span>
+                <span class="metric-label">Avg. SEO Score Boost</span>
               </div>
             </div>
           </div>
-          <div class="hero-card secondary">
-            <div>
-              <p class="text-xs uppercase tracking-[0.4em] text-black/60 dark:text-white/60">Latest Delivery</p>
-              <h4 class="text-lg font-serif mt-2">Elysian Clinics</h4>
-              <p class="text-sm text-black/70 dark:text-white/70">Wellness platform with immersive booking & long-form
-                storytelling.</p>
-            </div>
-            <div class="hero-badges">
-              <span>Headless CMS</span>
-              <span>SEO Score 98</span>
-              <span>ADA Ready</span>
-            </div>
-          </div>
+          
         </div>
       </section>
 
@@ -146,12 +132,12 @@
           </article>
           <article class="service-card">
             <span class="icon-circle">⊛</span>
-            <h3>AI Chatbots (Add-on)</h3>
-            <p>24/7 intelligent support for improved engagement and reduced workload.</p>
+            <h3>Conversion Optimisation</h3>
+            <p>Strategic optimization to maximize conversions and improve user engagement.</p>
           </article>
           <article class="service-card">
             <span class="icon-circle">⌛</span>
-            <h3>Appointment Booking</h3>
+            <h3>Appointment Scheduling</h3>
             <p>Seamless scheduling experiences integrated directly into your site.</p>
           </article>
           <article class="service-card">
@@ -165,9 +151,8 @@
       <section id="portfolio" class="py-20 space-y-12 fade-up">
         <div class="max-w-3xl">
           <p class="eyebrow">Portfolio</p>
-          <h2 class="section-title">Featured Projects</h2>
-          <p class="text-base text-black/70 dark:text-white/70">Explore a curated selection of our recent work—built to
-            be fast, elegant, and conversion-ready.</p>
+          <h2 class="section-title">Featured Templates</h2>
+          <p class="text-base text-black/70 dark:text-white/70">Explore our collection of premium, conversion-optimized templates designed for high-impact digital presence.</p>
         </div>
         <div class="portfolio-grid">
           <a href="https://arden-sloan-legal.vercel.app/" target="_blank" rel="noopener noreferrer"
@@ -181,6 +166,7 @@
               <h3 class="text-xl font-serif mt-2 mb-3">Arden & Sloan</h3>
               <p class="text-sm text-black/70 dark:text-white/70">Serving the highest standard of legal representation
                 with discretion and dedication.</p>
+              <span class="portfolio-view-button">View<span aria-hidden="true">↗</span></span>
             </article>
           </a>
           
@@ -193,6 +179,7 @@
               <h3 class="text-xl font-serif mt-2 mb-3">The Pinnacle Smile</h3>
               <p class="text-sm text-black/70 dark:text-white/70">A dental clinic with a modern, intuitive interface and
                 lead capture.</p>
+              <span class="portfolio-view-button">View<span aria-hidden="true">↗</span></span>
             </article>
           </a>
           <a href="https://lumera-salon.vercel.app/" target="_blank" rel="noopener noreferrer" class="block h-full">
@@ -204,6 +191,7 @@
             <h3 class="text-xl font-serif mt-2 mb-3">LUMERA salon</h3>
             <p class="text-sm text-black/70 dark:text-white/70">A high-end salon landing page with a modern, intuitive interface and
               lead capture.</p>
+            <span class="portfolio-view-button">View<span aria-hidden="true">↗</span></span>
           </article>
           </a>
           <a href="https://forgefit-six.vercel.app/" target="_blank" rel="noopener noreferrer" class="block h-full">
@@ -215,6 +203,7 @@
             <h3 class="text-xl font-serif mt-2 mb-3">Forgefit</h3>
             <p class="text-sm text-black/70 dark:text-white/70">A fitness landing page with a modern, intuitive interface and
               lead capture.</p>
+            <span class="portfolio-view-button">View<span aria-hidden="true">↗</span></span>
           </article>
           </a>
           <a href="https://ember-co.vercel.app/" target="_blank" rel="noopener noreferrer" class="block h-full">
@@ -225,6 +214,7 @@
             <p class="text-xs uppercase tracking-[0.4em] text-black/60 dark:text-white/60">Restaurant</p>
             <h3 class="text-xl font-serif mt-2 mb-3">Ember Co</h3>
             <p class="text-sm text-black/70 dark:text-white/70">A modern restaurant website with seamless user experience.</p>
+            <span class="portfolio-view-button">View<span aria-hidden="true">↗</span></span>
           </article>
           </a>
           <a href="https://silvergate-pearl.vercel.app/" target="_blank" rel="noopener noreferrer" class="block h-full">
@@ -236,82 +226,12 @@
             <h3 class="text-xl font-serif mt-2 mb-3">Silvergate Realty</h3>
             <p class="text-sm text-black/70 dark:text-white/70">A real estate landing page with a modern, intuitive interface and
               lead capture.</p>
+            <span class="portfolio-view-button">View<span aria-hidden="true">↗</span></span>
           </article>
           </a>
         </div>
       </section>
 
-      <section id="pricing" class="py-20 space-y-12 fade-up">
-        <div class="max-w-3xl">
-          <p class="eyebrow">Pricing</p>
-          <h2 class="section-title">Simple, Transparent Pricing</h2>
-        </div>
-        <div class="grid md:grid-cols-3 gap-8">
-          <article class="price-card">
-            <h3>Basic</h3>
-            <p class="price">₹45,000</p>
-            <ul>
-              <li>1–3 Page Website</li>
-              <li>Mobile Responsive</li>
-              <li>Basic SEO Setup</li>
-              <li>Delivery: 5 days</li>
-            </ul>
-          </article>
-          <article class="price-card premium">
-            <span class="badge">Most Loved</span>
-            <h3>Premium</h3>
-            <p class="price">₹85,000</p>
-            <ul>
-              <li>5–7 Pages</li>
-              <li>Premium UI Design</li>
-              <li>Conversion-Optimized</li>
-              <li>Standard SEO</li>
-              <li>3 Revisions</li>
-            </ul>
-          </article>
-          <article class="price-card">
-            <h3>Advanced</h3>
-            <p class="price">₹1,40,000</p>
-            <ul>
-              <li>8+ Pages</li>
-              <li>Custom UI/UX</li>
-              <li>Full SEO Optimization</li>
-              <li>High-end Animations</li>
-              <li>Blog + CMS</li>
-            </ul>
-          </article>
-        </div>
-        <div class="add-ons">
-          <p class="text-sm uppercase tracking-[0.4em] text-black/60 dark:text-white/60">Add-ons</p>
-          <div class="grid md:grid-cols-3 gap-6">
-            <article class="add-on-item" tabindex="0">
-              <div class="add-on-thumb" aria-hidden="true"></div>
-              <div>
-                <span class="add-on-title">AI Chatbots</span>
-                <p class="add-on-copy">On-brand conversational flows that qualify leads and deliver answers 24/7.</p>
-              </div>
-              <strong class="add-on-price">₹18,000</strong>
-            </article>
-            <article class="add-on-item" tabindex="0">
-              <div class="add-on-thumb" aria-hidden="true"></div>
-              <div>
-                <span class="add-on-title">Appointment Booking</span>
-                <p class="add-on-copy">Calendar sync, reminders, and automated confirmations built into your funnel.</p>
-              </div>
-              <strong class="add-on-price">₹12,000</strong>
-            </article>
-            <article class="add-on-item" tabindex="0">
-              <div class="add-on-thumb" aria-hidden="true"></div>
-              <div>
-                <span class="add-on-title">Google Review Widget</span>
-                <p class="add-on-copy">Pull live testimonials into pricing sections to reinforce trust pre-conversion.
-                </p>
-              </div>
-              <strong class="add-on-price">₹9,500</strong>
-            </article>
-          </div>
-        </div>
-      </section>
 
       <section id="contact" class="py-20 space-y-10 fade-up">
         <div class="max-w-3xl">
@@ -340,20 +260,25 @@
             Budget
             <select name="budget" required>
               <option value="">Select a range</option>
-              <option value="under50">Under ₹50K</option>
+              <option value="under20">Under ₹20K</option>
+              <option value="20-50">₹20K – ₹50K</option>
               <option value="50-100">₹50K – ₹1L</option>
-              <option value="100-200">₹1L – ₹2L</option>
-              <option value="200+">₹2L+</option>
+              
             </select>
           </label>
           <button type="submit" class="btn-primary md:col-span-2">
-            <span class="btn-label">Submit</span>
+            <span class="btn-label">Get a quote</span>
             <span class="btn-spinner" aria-hidden="true"></span>
           </button>
           <p id="formMessage" class="sr-only" role="status" aria-live="polite"></p>
         </form>
       </section>
     </main>
+
+    <a href="#contact" id="mobileStickyCta" class="mobile-sticky-cta btn-primary" aria-label="Get your website">
+      <span>Get Your Website</span>
+      <span aria-hidden="true">↗</span>
+    </a>
 
     <footer class="border-t border-black/5 dark:border-white/10 py-12">
       <div class="mx-auto max-w-6xl px-6 grid md:grid-cols-3 gap-20 text-sm">
@@ -367,7 +292,6 @@
             <li><a class="nav-link" href="#home">Home</a></li>
             <li><a class="nav-link" href="#services">Services</a></li>
             <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-            <li><a class="nav-link" href="#pricing">Pricing</a></li>
             <li><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>

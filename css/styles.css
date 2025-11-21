@@ -141,6 +141,31 @@ body {
   box-shadow: 0 12px 30px rgba(255, 215, 106, 0.6);
 }
 
+.mobile-sticky-cta {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.25rem;
+  z-index: 60;
+  box-shadow: 0 18px 40px rgba(17, 17, 17, 0.18);
+  opacity: 0;
+  transform: translateY(16px);
+  pointer-events: none;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  display: none;
+}
+
+.mobile-sticky-cta.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+  .mobile-sticky-cta {
+    display: inline-flex;
+  }
+}
+
 .btn-primary:hover,
 .btn-primary:focus-visible {
   transform: translateY(-2px);
@@ -572,6 +597,41 @@ button[aria-busy="true"] .btn-label {
   overflow: hidden;
   transition: transform 0.5s ease, box-shadow 0.5s ease, border-color 0.5s ease;
   animation: portfolio-float 14s ease-in-out infinite;
+}
+
+.portfolio-view-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 1.25rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #111111;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.3);
+  padding-bottom: 0.15rem;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.dark .portfolio-view-button {
+  color: #ffd76a;
+  border-color: rgba(255, 215, 106, 0.4);
+}
+
+.portfolio-view-button span[aria-hidden="true"] {
+  transform: translateY(-1px);
+}
+
+.portfolio-card:hover .portfolio-view-button,
+.portfolio-card:focus-within .portfolio-view-button {
+  color: #000;
+  border-color: #111111;
+}
+
+.dark .portfolio-card:hover .portfolio-view-button,
+.dark .portfolio-card:focus-within .portfolio-view-button {
+  color: #ffd76a;
+  border-color: rgba(255, 215, 106, 0.8);
 }
 
 .portfolio-card::before {

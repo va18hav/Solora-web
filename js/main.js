@@ -128,6 +128,33 @@ const mobileNav = () => {
   });
 };
 
+const mobileStickyCta = () => {
+  const cta = select('#mobileStickyCta');
+  const hero = select('#heroSection');
+  if (!cta || !hero) return;
+
+  let ticking = false;
+
+  const updateVisibility = () => {
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    const heroBottom = hero.getBoundingClientRect().bottom;
+    const hasScrolledPastHero = heroBottom <= 0;
+    cta.classList.toggle('is-visible', isMobile && hasScrolledPastHero);
+    ticking = false;
+  };
+
+  const requestTick = () => {
+    if (!ticking) {
+      window.requestAnimationFrame(updateVisibility);
+      ticking = true;
+    }
+  };
+
+  window.addEventListener('scroll', requestTick, { passive: true });
+  window.addEventListener('resize', requestTick);
+  updateVisibility();
+};
+
 const init = () => {
   handleTheme();
   enhanceCards();
@@ -136,6 +163,7 @@ const init = () => {
   contactFormLogic();
   initYear();
   mobileNav();
+  mobileStickyCta();
   videoHoverLogic();
 };
 
